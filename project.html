@@ -5,14 +5,19 @@
     <title>Title</title>
     <link rel="stylesheet" href="header.css" type="text/css">
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+<style>
 
+</style>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="head">
                <div class="links">
-                   <a href=""> <img src="./images/logo.jpg "> </a>
+                   <a href=""> <img width="100" height="100" src="./images/weather-icon-png.png "> </a>
                    <div class="name"> WEATHERBY </div>
                    <a target="_blank"href="https://www.accuweather.com/en/weather-news" class="news">NEWS</a>
                </div>
@@ -21,9 +26,9 @@
 
         <main class="main">
             <form class="form">
-                <label>Ваш город</label>
-                <input id="city" type="text">
-                <button id="getWeather">узнать погоду</button>
+                <label class="label">Ваш город</label>
+                <input id="city" type="search" class="input">
+                <button id="getWeather" class="glow-on-hover">узнать погоду</button>
             </form>
 
             <div class="weatherContainer">
@@ -53,9 +58,9 @@
                 temp.innerText = 'Температура: '+ Math.round(json.main.temp -273.15) + ' °C',
                   humidity.innerText = 'Влажность: ' + json.main.humidity + '%',
                     wind.innerText = 'Скорость ветра: ' + Math.round(json.wind.speed) + ' km/h'
-                    console.log(json.weather[0].main)
+
                 const weatherMain =  json.weather[0].main;
-                console.log(weatherMain)
+
                 if( weatherMain == 'Clouds') {
                     document.body.style.backgroundImage = 'url("./images/clouds.gif")';
                 }
@@ -73,6 +78,16 @@
     getWeatherBtn.addEventListener('click', (event) => {
        event.preventDefault()
         getWeather(cityInput.value)
+    })
+
+    function onClear() {
+        temp.innerText=''
+        humidity.innerText = ''
+        wind.innerText = ''
+    }
+
+    cityInput.addEventListener('click', () => {
+        cityInput.addEventListener('search', onClear);
     })
 </script>
 </body>
