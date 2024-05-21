@@ -11,6 +11,47 @@ body {
     min-height: 100vh;
 }
 
+.name{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow:
+            -1px -1px #FFF,
+            -2px -2px #FFF,
+            -1px 1px #FFF,
+            -2px 2px #FFF,
+            1px 1px #FFF,
+            2px 2px #FFF,
+            1px -1px #FFF,
+            2px -2px #FFF,
+            -3px -3px 2px #BBB,
+            -3px 3px 2px #BBB,
+            3px 3px 2px #BBB,
+            3px -3px 2px #BBB;
+    color: steelblue;
+    transition: all 1s;
+}
+.news {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow:
+            -1px -1px #FFF,
+            -2px -2px #FFF,
+            -1px 1px #FFF,
+            -2px 2px #FFF,
+            1px 1px #FFF,
+            2px 2px #FFF,
+            1px -1px #FFF,
+            2px -2px #FFF,
+            -3px -3px 2px #BBB,
+            -3px 3px 2px #BBB,
+            3px 3px 2px #BBB,
+            3px -3px 2px #BBB;
+    color: steelblue;
+    transition: all 1s;
+}
+
 .container{
     margin: 0 auto;
     max-width: 1248px;
@@ -35,11 +76,13 @@ body {
 
 .footer {
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 100px;
     background-color: cadetblue;
     flex-shrink: 0;
+
 
 }
 
@@ -48,6 +91,21 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
+    text-shadow:
+            -1px -1px #FFF,
+            -2px -2px #FFF,
+            -1px 1px #FFF,
+            -2px 2px #FFF,
+            1px 1px #FFF,
+            2px 2px #FFF,
+            1px -1px #FFF,
+            2px -2px #FFF,
+            -3px -3px 2px #BBB,
+            -3px 3px 2px #BBB,
+            3px 3px 2px #BBB,
+            3px -3px 2px #BBB;
+    color: steelblue;
+    transition: all 1s;
 }
 
 .humidity{
@@ -55,6 +113,21 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
+    text-shadow:
+            -1px -1px #FFF,
+            -2px -2px #FFF,
+            -1px 1px #FFF,
+            -2px 2px #FFF,
+            1px 1px #FFF,
+            2px 2px #FFF,
+            1px -1px #FFF,
+            2px -2px #FFF,
+            -3px -3px 2px #BBB,
+            -3px 3px 2px #BBB,
+            3px 3px 2px #BBB,
+            3px -3px 2px #BBB;
+    color: steelblue;
+    transition: all 1s;
 }
 
 .wind{
@@ -62,15 +135,30 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
+    text-shadow:
+            -1px -1px #FFF,
+            -2px -2px #FFF,
+            -1px 1px #FFF,
+            -2px 2px #FFF,
+            1px 1px #FFF,
+            2px 2px #FFF,
+            1px -1px #FFF,
+            2px -2px #FFF,
+            -3px -3px 2px #BBB,
+            -3px 3px 2px #BBB,
+            3px 3px 2px #BBB,
+            3px -3px 2px #BBB;
+    color: steelblue;
+    transition: all 1s;
 }
 
 .footerText{
     margin-bottom: 50px;
     color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
 }
 .weatherContainer{
     display: flex;
